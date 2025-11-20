@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WanderWise Solutions — Study Abroad Specialists</title>
+  <meta name="description" content="WanderWise Solutions — AI programme matching, Visa Intelligence, Scholarship Finder 2.0, Application Automation. Headquartered in Accra, Ghana." />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="brand">
+      <img src="IMG_20251113_043937_673@-252149484.jpg" alt="WanderWise Solutions logo" class="logo">
+      <div class="brand-text">
+        <h1><a href="#" id="home-link">WanderWise<span class="accent"> Solutions</span></a></h1>
+        <p class="tagline">Everything Study Abroad — AI-driven & Human-powered</p>
+      </div>
+    </div>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="WanderWise hero">
+      <div class="hero-inner">
+        <h2 class="hero-heading">Study Abroad. Simplified.<span class="pulse">✦</span></h2>
+        <p class="hero-lead">AI programme matching, Visa Intelligence Engine, Scholarship Finder 2.0 and Application Automation — engineered for ambitious students from Ghana and the world.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#contact">Get Started</a>
+          <a class="btn ghost" href="#services">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit">
+          <img src="IMG_20251113_043937_673@-252149484.jpg" alt="" class="logo-floating">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h3 class="section-title">Our Services</h3>
+      <div class="services-grid">
+        <article class="service-card" id="service-ai">
+          <div class="icon">🤖</div>
+          <h4>AI Programme Matching</h4>
+          <p>Advanced AI matches your profile to ideal programmes worldwide — score-fit, scholarships and acceptance probability included.</p>
+          <details>
+            <summary>What this includes</summary>
+            <ul>
+              <li>Personal academic & career fit analysis</li>
+              <li>Ranked programme suggestions</li>
+              <li>Automated application checklist</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service-card" id="service-visa">
+          <div class="icon">🛂</div>
+          <h4>Visa Intelligence Engine</h4>
+          <p>Country-specific visa guidance, timeline automation and document preparation — reduce delays and improve approval rates.</p>
+          <details>
+            <summary>What this includes</summary>
+            <ul>
+              <li>Visa eligibility checklists</li>
+              <li>Real-time timeline & reminders</li>
+              <li>Interview preparation templates</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service-card" id="service-scholarship">
+          <div class="icon">🎓</div>
+          <h4>Scholarship Finder 2.0</h4>
+          <p>Scour institutional and national scholarships with filters for country, field and eligibility — auto-apply options available.</p>
+          <details>
+            <summary>What this includes</summary>
+            <ul>
+              <li>Scholarship discovery engine</li>
+              <li>Eligibility scoring</li>
+              <li>Application auto-fill</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service-card" id="service-apps">
+          <div class="icon">📄</div>
+          <h4>Application Automation</h4>
+          <p>Smart forms, document generation and application tracking so you can focus on essays and interviews.</p>
+          <details>
+            <summary>What this includes</summary>
+            <ul>
+              <li>Document builders (CV, SOP, essays)</li>
+              <li>Auto-form fillers for partner portals</li>
+              <li>Progress dashboards & alerts</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <h3 class="section-title">Our Process</h3>
+      <ol class="process-steps">
+        <li><strong>Consult:</strong> Free profile evaluation & goal setting.</li>
+        <li><strong>Match:</strong> AI-generated list of matched programmes & scholarships.</li>
+        <li><strong>Apply:</strong> Document creation + application automation.</li>
+        <li><strong>Visa:</strong> Visa prep, interview coaching & post-arrival support.</li>
+      </ol>
+    </section>
+
+    <section id="about" class="about">
+      <h3 class="section-title">About WanderWise</h3>
+      <p>Headquartered in Accra, Ghana, WanderWise Solutions blends human expertise with modern intelligence to deliver a superior study-abroad experience. We work with students, families and institutions to increase acceptance, reduce friction, and unlock funding.</p>
+      <div class="stats">
+        <div><strong>1000+</strong><span>Students assisted</span></div>
+        <div><strong>45%</strong><span>Average scholarship success</span></div>
+        <div><strong>20+</strong><span>Partner institutions</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3 class="section-title">Get in Touch</h3>
+      <p>Ready to start your study abroad journey? Send us a message and we'll schedule your free evaluation.</p>
+      <form id="contact-form" action="#" method="post" onsubmit="return handleContact(event)">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="country">Country</label>
+          <input id="country" name="country" value="Ghana" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Short message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-row actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+      </form>
+      <address class="contact-info">
+        <strong>WanderWise Solutions</strong><br>
+        Accra, Ghana<br>
+        hello@wanderwise.com<br>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 WanderWise Solutions — Designed for students from Ghana & beyond.</p>
+    <p class="small">Made with ♥ — Follow us on social media for updates.</p>
+  </footer>
+</body>
+</html>
